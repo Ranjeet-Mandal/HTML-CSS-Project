@@ -1,0 +1,24 @@
+body{
+    height: 100vh;
+    background:linear-gradient(45deg ,cyan, yellow ,magenta);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.spinner{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 7px solid #cfd8dc;
+    border-top-color: blue;
+    animation: 1s spin infinite ease-in-out;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
